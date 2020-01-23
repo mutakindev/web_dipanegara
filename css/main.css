@@ -1,0 +1,567 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* small navbar */
+.small-navbar {
+    max-width: 100vw;
+    min-height: 50px;
+    background-color: #13488E;
+    padding: 0 85px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.small-navbar-text{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.small-navbar section.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.small-navbar-search{
+    padding: 0 5px 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.small-navbar-search input[type=search]{
+    padding: 5px;
+    width: 25vw;
+    height: 27px;
+    margin-right: 9px;
+    border: none;
+    border-radius: 125px;
+}
+
+.small-navbar-search .btn-search{
+    width: 27px;
+    height: 27px;
+    padding: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+
+
+.small-navbar-cta{
+    background-color: #ED3D3D;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    color: #fff;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .8rem;
+    margin: 0 5px 0 25px;
+
+    /* centering teks */
+    line-height: 2rem;
+}
+
+.small-navbar-social-media > div.sosmed{
+    display: inline-block;
+    width: 33px;
+    height:33px;
+    margin-left: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+div.sosmed:hover{
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.4);
+    transform : rotate(360deg);
+    transition: all .3s ease-in;
+    
+}
+
+.sosmed-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #13488E;
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right : 14px;
+    color: white;
+}
+
+/* navbar utama */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 85px;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, .5);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.logo .universitas-name{
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #ED3D3D;
+}
+
+.logo a {text-decoration: none;}
+
+
+.navbar .nav ul.nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar .nav ul.nav-link .nav-item{
+    position: relative;
+    padding: 20px;
+}
+
+.navbar .nav ul li a{
+    text-decoration: none;
+    color: #414040;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav ul.nav-link .nav-item:last-child{
+    padding-right: 0;
+}
+
+.nav .nav-link .nav-item:hover{
+    color: #ED3D3D;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    width: 230px;
+    height: auto;
+    list-style-type: square;
+    list-style-position: inside;
+    z-index:999;
+}
+
+.dropdown li {
+    padding:10px!important;
+    background-color: #fff!important;
+}
+
+.dropdown li a{
+    font-size: 14px!important;
+    font-weight: 100px!important;
+}
+.drop:hover .dropdown{
+    display: block;
+    
+}
+
+
+/* Slider */
+.slideshow-container {
+    max-width: 100vw;
+    max-height: 80vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+.mySlides img {
+    width: 100%;
+}
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #1C1B1B;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    background-color: transparent;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.text {
+    padding: 10px 12px;
+    height: 15vh;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.301);
+    width: 100%;
+    text-align: center;
+}
+
+.text a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.dot-container {text-align: center;margin-top:10px}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to{opacity: 1}
+}
+
+
+.berita{
+    height:auto;
+    width: 100%;
+    padding: 20px 85px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.berita h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin: 10px auto;
+    width: 170px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 10px auto;
+}
+
+.news-item{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    /* box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5); */
+    margin: .5em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    border-radius: 10px;
+}
+
+.news-item p{
+    margin: 10px 0;
+}
+
+.news-item img{
+    width: 100%;
+}
+
+.readmore {
+    color: red;
+    font-size: 1em;
+    text-decoration: none;
+
+}
+
+.lokasi {
+    width: 100%;
+    height: 520px;
+    background-color: #13488E;
+    padding: 15px 85px 15px 85px;
+    display: flex;
+    align-items: center;
+    padding: 0 85px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+
+.map {
+    width: 40vw;
+    height: 50vh;
+    background: white;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.visitor-counter{
+    width: 400px;
+    border: 2px dashed #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.visitor-counter p {
+    margin-bottom: 10px;
+}
+
+
+.visitor-counter .visitor-number {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C1B1B;
+    padding: 15px 85px 15px 85px;
+    color: white;
+
+}
+
+
+.sosmed-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.situs-terkait {
+    display: flex;
+    align-items: center;
+}
+
+.situs-terkait h4{
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.situs-terkait ul{
+    list-style-type: square;
+}
+
+.situs-terkait ul li {
+    margin-top: 10px;
+}
+
+.situs-terkait ul li a{
+    font-size: .7rem;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.logo-footer img{
+    width: 150px;
+    border-radius: 50%;
+}
+@media (max-width:475px){
+    .navbar,.berita, .lokasi {
+        padding: 0 50px;
+    }
+
+    .small-navbar {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 50px;
+    }
+
+    .universitas-name{
+        font-size: 1.25rem!important;
+        text-align: center;
+    }
+
+    .small-navbar-social-media.fixed{
+        position: fixed;
+        right: 10px;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-navbar-social-media.fixed > .sosmed {
+        margin: 2px auto;
+    }
+
+   .small-navbar-cta{
+       margin: 3px;
+       width: 100px;
+   }
+
+   .menu {
+       display: block;
+   }
+    .navbar {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .nav{
+        display: none;
+        animation: showMenu .4s ease-out;
+    }
+
+    @keyframes showMenu {
+        0% {
+            transform: translateY(-10%);
+        }
+        50% {
+            transform: translateY(20%);
+        }
+        100% {
+            transform: translateY(30%);
+        }
+    }
+    .show {
+        display: block;
+    }
+
+    .navbar .nav ul.nav-link {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar .nav ul.nav-link li {
+        width: 100%;
+    }
+
+    .dropdown {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .visitor-counter {
+        font-size: 2rem;
+    }
+
+    .map {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+
+
+    .situs-terkait {
+        margin: 15px 0;
+    }
+
+    .sosmed-footer .sosmed {
+        margin-left: 2px!important;
+    }
+
+}

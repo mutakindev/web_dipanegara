@@ -1,0 +1,138 @@
+.tentang-container {
+    line-height: 1.6rem;
+    margin: 0 auto 50px;
+}
+
+.tentang-container section {
+    padding: 15px 85px;
+}
+.tentang-container section div.second-logo {
+    text-align: center;
+}
+
+.tentang-container section div.second-logo img {
+    width: 10rem;
+}
+.tentang-container header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #13488E;
+}
+
+.tentang-container header h2 {
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.tentang-container article h3 {
+    display: flex;
+    align-items: center;
+}
+
+.tentang-container article h3 .fa {
+    color: #13488E;
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+.tentang-container .visi p{
+    padding-left: 50px;
+    font-size: 1.5rem;  
+    font-weight: bold;  
+}
+
+.tentang-container article ul {
+    list-style-type: none;
+}
+
+.tentang-container article ul li {
+    padding-left: 3vw;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tentang-container article ul li .fa {
+    color: #13488E;
+    font-weight: bold;
+}
+
+.site-map{
+    height:auto;
+    width: 100%;
+    padding: 20px 85px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.site-map section {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: .5rem;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5);
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    border-radius: 10px;
+}
+
+.site-map section a {
+    color: #a3a1a1;
+}
+
+
+.tentang-container article.site-map ul li {
+    margin:10px auto;
+    padding: 0;
+}
+
+
+.site-map section h3{
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #a3a1a1;
+}
+
+
+@media (max-width:475px){
+    .tentang-container section {
+        padding: 15px 30px;
+        font-size: .8em;
+        text-align: justify;
+    }
+
+    .tentang-container article ul li {
+        margin-bottom: 10px;
+    }
+
+    .tentang-container article ul {
+        margin-top: 10px;
+
+    }
+
+    .tentang-container header h2 {
+        font-size: 1rem;
+
+    }
+
+    .tentang-container .visi p{
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .site-map {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .site-map section{
+        text-align: center!important;
+    }
+
+}

@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Mengatur font yang dipakai dan background halaman */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #038ade;
+}
+
+/* membuat container menjadi layout flexbox dan kotak login di tengah */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Mengatur kotak form login lebar 400px dan background putih */
+.login-box {
+  margin-top: 150px;
+  flex-basis: 400px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Mengatur jdul form dengan border bawah dan posisi di tengah */
+.login-box h2 {
+  border-bottom: 1px solid #ccc;
+  color: #555;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 0 20px;
+}
+
+/* Mengatur agar tag input dan select memenuhi container dan tampil lebih bagus */
+input,
+select {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+}
+/* Mengatur tombol submit */
+input[type="submit"] {
+  background-color: #038ade;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Dashboard */
+/* Mengatur desain header */
+
+header {
+  background: #038ade;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+/* Mengatur lebar menu 20% dengan background hitam */
+aside {
+  flex: 20%;
+  background: #222;
+}
+
+/* Mengatur lebar konten utama 80% dengan background putih */
+main {
+  flex: 80%;
+  background: #fff;
+  min-height: 530px;
+  padding: 15px 20px;
+}
+
+footer {
+  background: #ccc;
+  color: #555;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Mengatur layout pada layar kecil (Responsive)  */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Navigasi */
+/* Membuang padding tag ul  */
+.menu {
+  padding: 0;
+}
+
+/* Menambah border bawah tag li */
+.menu li {
+  border-bottom: 1px dotted #444;
+}
+
+/* Mengatur desain menu yang dibuat dengan tag a */
+.menu li a {
+  display: block;
+  padding: 20px 20px;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mengganti background ketika mouse hover */
+.menu a:hover {
+  background: #000;
+}
+
+/* Table */
+
+/* Mengatur desain judul halaman dengan border dibawah */
+.judul {
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table th {
+  background: #eee;
+}
+
+.tombol {
+  display: inline-block;
+  max-width: 150px;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  background: #038ade;
+  cursor: pointer;
+}
+
+.tombol.edit,
+.tombol.hapus {
+  padding: 10px 15px;
+  font-size: 12px;
+}
+
+.tombol.hapus {
+  background: #fc4c4c;
+}
+
+/* Form */
+.form-group {
+  clear: both;
+}
+
+.form-group label {
+  display: block;
+  padding: 15px 0;
+  float: left;
+  width: 30%;
+  font-weight: bold;
+}
+
+.form-group .input {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+input[type="radio"] {
+  width: 50px;
+}
+
+.tombol.reset {
+  background: #fb8307;
+}
